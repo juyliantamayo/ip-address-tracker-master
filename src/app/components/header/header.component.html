@@ -1,0 +1,21 @@
+<header>
+  <div class="header">
+    <h1 class="title">IP Address Tracker</h1>
+  </div>
+
+  <div class="form" (submit)="submitIp()">
+    <form [formGroup]="testForm">
+      <div class="input-container">
+        <input type="text" [(ngModel)]="ip" name="ip" formControlName="ip" />
+        <button type="submit" >
+          <!-- Aquí va tu SVG de flecha o imagen -->
+          <img
+            clas="svgArrow"
+            src="../../../assets/icon-arrow.svg"
+            alt="My Happy SVG"
+          />
+        </button>
+      </div>
+    </form>
+  </div>
+</header>
